@@ -3,6 +3,7 @@
 Build and push image :
 
 $ `docker build -t engineren/calogan-docker .`
+
 $ `docker image push engineren/calogan-docker`
 
 
