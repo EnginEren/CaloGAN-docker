@@ -14,4 +14,5 @@ $ `docker run -it --rm -v $PWD/CaloGAN/data:/home/CaloGAN/data calogan-docker py
 
 Running naf-ilc-gpu :
 
-$ `singularity shell -B data:/home/CaloGAN/data docker://engineren/calogan-docker:latest`
+$ `singularity exec --bind data:/home/CaloGAN/data --nv docker://engineren/calogan-docker:latest python -m models.train models/particles.yaml`
+
