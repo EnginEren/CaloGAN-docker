@@ -14,9 +14,6 @@ RUN apt-get upgrade -y
 RUN apt-get install -y git
 RUN apt-get install -y vim
 
-## Check out the code 
-RUN cd /home && git clone https://github.com/EnginEren/CaloGAN.git 
-
 WORKDIR /home/CaloGAN
 
 
