@@ -16,7 +16,7 @@ Running naf-ilc-gpu :
 
 $ `singularity pull docker://engineren/calogan-docker:latest`
 
-$ `singularity instance start --bind data:/home/CaloGAN/data calogan-docker_latest.sif caloGAN`
+$ `singularity instance start --bind data:/home/CaloGAN/data --nv calogan-docker_latest.sif caloGAN`
 
 $ `singularity run instance://caloGAN python -m models.train models/particles.yaml`
 
