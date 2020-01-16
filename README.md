@@ -9,7 +9,7 @@ $ `docker image push engineren/calogan-docker`
 
 Running in my local : 
 
-$ `docker run -it --rm -v $PWD/CaloGAN:/home/CaloGAN calogan-docker python -m models.train models/particles.yaml`
+$ `docker run -it --rm -v $PWD/CaloGAN:/home/CaloGAN engineren/calogan-docker python -m models.train models/particles.yaml`
 
 
 Running naf-ilc-gpu :
